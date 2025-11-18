@@ -1,7 +1,21 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [141] using StatReload
-INFO:     Started server process [143]
+INFO:     Started reloader process [214] using StatReload
+INFO:     Started server process [216]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:50434 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:60400 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:60414 - "GET /api/satellites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:60414 - "GET /api/satellites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:60414 - "GET /api/satellites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:60414 - "GET /api/progress/eb7a2992-1e14-4c36-9b16-0669719a07c1 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:42950 - "GET /api/satellites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:42950 - "GET /api/satellites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:42950 - "GET /api/satellites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:42950 - "GET /api/progress/eb7a2992-1e14-4c36-9b16-0669719a07c1 HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:42960 - "OPTIONS /api/progress/complete HTTP/1.1" 200 OK
+INFO:     172.20.0.1:42966 - "POST /api/progress/complete HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:51380 - "GET /api/satellites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51380 - "GET /api/satellites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51380 - "GET /api/satellites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:51380 - "GET /api/progress/eb7a2992-1e14-4c36-9b16-0669719a07c1 HTTP/1.1" 500 Internal Server Error

@@ -12,7 +12,7 @@ Model name is converted to lowercase for the collection name:
 """
 
 from pydantic import BaseModel, Field
-from typing import Optional
+from typing import Optional, List
 
 # Example schemas (replace with your own):
 
@@ -37,6 +37,15 @@ class Product(BaseModel):
     price: float = Field(..., ge=0, description="Price in dollars")
     category: str = Field(..., description="Product category")
     in_stock: bool = Field(True, description="Whether product is in stock")
+
+# Progress tracking for the Universe of Decisions
+class Progress(BaseModel):
+    """
+    Tracks which satellites the user has completed.
+    Collection name: "progress"
+    """
+    user_id: str = Field(..., description="Identifier for the user or session")
+    completed: List[int] = Field(default_factory=list, description="List of completed satellite IDs")
 
 # Add your own schemas here:
 # --------------------------------------------------
